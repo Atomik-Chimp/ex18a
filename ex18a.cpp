@@ -4,14 +4,19 @@
 /* Write a program to replace each tab by the three-character sequence >, <backspace>, -, which printrs as <arrow> */
 /* and each backspace by the similar sequence <, <backspace>, - this makes tabs and backspaces visible. */
 
-#include "stdafx.h"	/* not all C++, autowritten by Visual C++ 2010 */
+#include "stdafx.h"	/* autowritten by Visual C++ 2010, Adjusted to be C */
 
 
 int main(int argc, char* argv[])
 {
 	int c;		/* to hold the input characters */
 	while((c = getchar()) != EOF){		/* while we have not reached the end */
-		if(c == '\t')
+		if(c == '\t') {
+			putchar('>');
+			putchar('\b');
+			putchar('-');
+		} else putchar(c);
+	}
 	getchar();
 
 	return 0;

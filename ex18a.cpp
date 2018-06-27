@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 		if(c == '\t') {
 			putchar('>');
 			putchar('\b');
-			putchar('-');
+			putchar('-');				/* Note this doesn't work as intended for Visual Studio */
 		} else putchar(c);
 	}
 	getchar();

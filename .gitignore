@@ -1,0 +1,14 @@
+# Visual Studio Files to Ignore
+# Solution user option files 
+*.sou
+# Project user option files
+*.csproj.user
+*.vbproj.user
+# Web Information Files
+*.csproj.webinfo
+*.vbproj.webinfo
+# Build Output Files
+*.dll
+*.exe 
+# Software Database File
+*.sdf
